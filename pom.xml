@@ -28,13 +28,13 @@
 
   </dependencies>
 
-  <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>artifactoryserver-releases</name>
-        <url>http://3.8.93.89:8081/artifactory/libs-release</url>
-    </repository>
-  </distributionManagement>
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactoryserver-snapshots</name>
+        <url>http://3.8.93.89:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
